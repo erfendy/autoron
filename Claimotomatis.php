@@ -90,13 +90,13 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO REDEEM TOD🎫▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("white","🔐▶️ Claim voc Alfamart kalo beruntung");
+        echo "\n".color("white","🔐▶️ Claim voc Permen alfamart");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"KEALFAYUK"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"KOROROSENSASIKAYA"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -134,7 +134,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(1);
         }
         sleep(3);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"NEWMLCCMAR20"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"JAJANHEMAT"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$messageboba09);
         sleep(3);
