@@ -208,15 +208,11 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          die();
          }else{
          echo color("red","-] GAGAL!!!\n");
-         }
-         }
-         }
          }else{
          echo color("red","-] Otp yang anda input salah");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
-         }
          }
          else{
          echo color("red","-] Nomor sudah teregistrasi");
